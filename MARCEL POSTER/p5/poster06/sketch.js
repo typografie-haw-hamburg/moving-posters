@@ -41,7 +41,7 @@ textFont("Futura");
 fill(245);
 textStyle(BOLD);
 textSize(150)
-text("find your",50,windowHeight-50);
+text("find your",windowWidth-50,50);
 text(query,50,windowHeight-50);
 imageMode(CENTER);
 
