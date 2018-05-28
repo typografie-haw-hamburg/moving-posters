@@ -43,13 +43,13 @@ imageMode(CENTER);
   speedX = map (pRotationY,-180,180,-20,20);
   speedY = map (pRotationX,-180,180,-20,20);
 
-    posY += speedY*i;
-    posX += speedX*i;
+    posY += speedY;
+    posX += speedX;
 
   if (loadedImages.length > 0) {
 
     for (var i = 0; i < loadedImages.length; i++) {
-      image(loadedImages[i],posX,posY);
+      image(loadedImages[i],posX*i,posY*i);
 
     }
 
